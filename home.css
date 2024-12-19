@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #ffffff;
+    line-height: 1.6;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+header .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .logo span {
+    color: #ff6347;
+}
+
+header .navigation {
+    list-style: none;
+    display: flex;
+}
+
+header .navigation li {
+    margin-left: 20px;
+}
+
+header .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header .navigation a:hover {
+    color: #ff6347;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner .content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.banner .content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.banner .btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.banner .btn:hover {
+    background-color: #333;
+}
+
+.about {
+    padding: 100px 20px;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about .col50 {
+    flex: 1;
+    padding: 20px;
+}
+
+.about .titleText {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about .titleText span {
+    color: #ff6347;
+}
+
+.about .imgbx {
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .imgbx img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.menu .title {
+    margin-bottom: 50px;
+}
+
+.menu .title h2 {
+    font-size: 32px;
+    color: #fafafa;
+}
+
+.menu .title span {
+    color: #ff6347;
+}
+
+.menu b {
+    font-size: 20px;
+    color: #ff6347;
+}
+
+.menu .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu .box {
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: #fff;
+}
+
+.menu .box:hover {
+    transform: scale(1.05);
+}
+
+.menu .box .imgbx {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu .box .imgbx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .box .text {
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.menu .box .text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu .box .description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.menu .box:hover .imgbx img {
+    transform: scale(1.1);
+}
+
+.menu .box .text .description {
+    margin-top: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -4px;
+}
+
+.search-box {
+    width: 33%;
+    padding: 10px 15px;
+    border: 2px solid #ff634700;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+    position: absolute;
+    top: 90%;
+}
+
+.search-btn {
+    padding: 12px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: absolute;
+    top: 90%;
+    margin-left: 595px;
+}
+
+.search-btn:hover {
+    background-color: #333;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc0000;
+    color: rgba(255, 145, 0, 0.703);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 35px;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background-color: #e6b800;
+}
+
+.contact {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: auto;
+    margin: -25px;
+}
+
+.contact .titleText {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact .titleText span {
+    color: #ff6347;
+}
+
+.contact .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact .member {
+    max-width: 200px;
+    text-align: center;
+}
+
+.contact .member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.contact .social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact .social-icons a:hover {
+    transform: scale(1.2);
+}
+

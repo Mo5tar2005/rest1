@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: #f9f9f9;
+    background-image: url(./غربي/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.con1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 33px;
+}
+
+.con2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 33px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+.طبق {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.طبق .صورة {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.طبق .صورة img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.طبق .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.طبق .صورة:hover .details {
+    opacity: 1;
+}
+
+.طبق .details h3 {
+    font-size: 18px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.طبق .details ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.طبق .details ul li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.طبق .details a {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.طبق .details a:hover {
+    background-color: black;
+    color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .طبق .صورة img {
+        width: 100%;
+    }
+}

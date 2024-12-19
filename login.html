@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Restaurant Login</h1>
+        <form id="loginForm" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            
+            <div class="captcha-container">
+                <label for="captcha">Enter the code:</label>
+                <div id="captcha" class="captcha-box"></div>
+                <input type="text" id="captchaInput" placeholder="Enter the captcha" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+        <a href="#">Forgot Password?</a>
+        <button class="register-button" onclick="window.location.href='regiester.html'">Register</button>
+    </div>
+
+    <script src="captcha.js"></script>
+</body>
+</html>
